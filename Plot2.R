@@ -25,8 +25,8 @@ subsetted_household$datetime <- paste(subsetted_household$Date, subsetted_househ
 subsetted_household$datetime <- dmy_hms(subsetted_household$datetime)
 
 #Plot and save the second graph
-with(subsetted_household, plot(datetime, Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)"))
-png(filename = "Plot02.png",
+with(subsetted_household, plot(datetime, Global_active_power, type = "l", ylab = "Global Active Power"), xlab = " ")
+png(filename = "Plot2.png",
     width = 480, height = 480)
 dev.off()
 

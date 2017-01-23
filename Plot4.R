@@ -34,5 +34,5 @@ lines(subsetted_household$datetime, subsetted_household$Sub_metering_3, col = "b
 legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = c(1,1,1), xjust = 1)
 with(subsetted_household, plot(datetime, Global_reactive_power, type = "l"))
 #Save the graph
-png(filename = "Plot04.png", width = 480, height = 480)
+png(filename = "Plot4.png", width = 480, height = 480)
 dev.off()

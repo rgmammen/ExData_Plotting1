@@ -30,6 +30,6 @@ lines(subsetted_household$datetime, subsetted_household$Sub_metering_2, col = "r
 lines(subsetted_household$datetime, subsetted_household$Sub_metering_3, col = "blue")
 legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = c(1,1,1), xjust = 1)
 #Save the graph
-png(filename = "Plot%03.png",
+png(filename = "Plot3.png",
     width = 480, height = 480)
 dev.off()

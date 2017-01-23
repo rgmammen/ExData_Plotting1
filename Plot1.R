@@ -21,6 +21,6 @@ subsetted_household$Sub_metering_3 <- as.numeric(subsetted_household$Sub_meterin
 
 #Plot and save the histogram
 with(subsetted_household, hist(Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power"), ylim = c(0,1200))
-png(filename = "Plot01.png",
+png(filename = "Plot1.png",
     width = 480, height = 480)
 dev.off()
